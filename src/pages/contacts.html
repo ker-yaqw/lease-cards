@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+@include('head.html',{
+    'lang':'ru',
+    'title':'Contacts',
+
+    'viewport-def':'initial-scale=1.0',
+    'viewport-noscale':'minimum-scale=1.0, maximum-scale=1.0, user-scalable=no',
+
+    'meta-keywords':'Ключевые, слова, страницы, мета, теги,для seo',
+    'meta-title':'Показываться в качестве фрагмента текста в результатах поиска',
+    'meta-description':'Краткое описание страницы. Показываться в качестве фрагмента текста в результатах поиска',
+
+    'fonts-preload': '<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>\n<link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>',
+})
+
+    <body class="page__body">
+        <div class="page__wrapper">
+            @include('header/header.html',{})
+            @include('сontacts/contacts.html',{})
+            @include('footer/footer.html',{})
+        </div>
+    </body>
+</html>

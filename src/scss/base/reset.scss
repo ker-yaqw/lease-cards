@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+iframe {
+    border: none;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+    border-radius: 0;               //* Убираем закругление углов
+    -webkit-appearance: none;       //* Отменяем стандартные стили для устройств на базе WebKit (например, iPhone)
+    -moz-appearance: none;          //* Отменяем стандартные стили для Firefox */
+    appearance: none;               //* убирает стандартный внешний вид (select)
+    -webkit-appearance: none;
+}
+
+input[type="search"] {
+    background-color: transparent;
+
+    // &::-webkit-search-decoration,
+    // &::-webkit-search-cancel-button,
+    // &::-webkit-search-results-button,
+    // &::-webkit-search-results-decoration {
+    //     display: none;
+    // }
+}
